@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.task-input-area {
+  width: 300px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.task-input-area h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input input,
+.task-input select,
+.task-input button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.task-input button {
+  background-color: #003366;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #00509e;
+}
+
+.task-list-area {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.task-list-area h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #ffffff;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.task-content {
+  display: flex;
+  align-items: flex-start;
+  /* Align items at the start */
+  gap: 10px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.priority-dot {
+  flex-shrink: 0;
+  /* Prevent shrinking */
+  height: 15px;
+  /* Set height */
+  width: 15px;
+  /* Set width */
+  border-radius: 50%;
+}
+
+.priority-dot.low {
+  background-color: green;
+}
+
+.priority-dot.medium {
+  background-color: yellow;
+}
+
+.priority-dot.high {
+  background-color: red;
+}
+
+li button {
+  align-self: flex-end;
+  background-color: #003366;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+li button:hover {
+  background-color: #00509e;
+}
